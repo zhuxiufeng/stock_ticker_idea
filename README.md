@@ -1,22 +1,25 @@
-# Stock Ticker (IntelliJ IDEA Plugin)
+# 股票盯盘助手 (IntelliJ IDEA 插件)
 
-A simple, lightweight IntelliJ platform plugin that displays real-time stock and financial data directly in your IDE's status bar. 
+一个轻量级的 IntelliJ 平台插件，可以让您在 IDE 的底部状态栏直接查看实时的股票和金融市场行情。
 
-## Features
-- **Real-Time Data**: Fetches the latest market prices using the Sina Finance API.
-- **Multiple Markets**: Supports tracking A-Shares, Hong Kong Stocks, US Stocks, and Commodities (Gold).
-- **Clean UI**: Automatically rotates the displayed stocks every 5 seconds to keep the status bar uncluttered (showing 3 at a time).
-- **Hover Details**: Hover your mouse over the status bar widget to see the full list of tracked stocks immediately.
+> **💡 说明**
+> 本项目由 AI 编码助手完全辅助开发完成。
 
-## Installation
-1. Build the project using Gradle or download the `.zip` from releases.
-2. Open your IntelliJ-based IDE (IDEA, WebStorm, PyCharm, etc.).
-3. Navigate to **File** -> **Settings** -> **Plugins**.
-4. Click the ⚙️ icon and select **Install Plugin from Disk...**.
-5. Choose the `.zip` file and restart the IDE.
+## 🌟 核心功能
+* **实时数据**：通过新浪财经 API 获取最新市场价格。
+* **多市场支持**：支持查看 A 股（如上证指数、贵州茅台）、港股（如腾讯、美团）、美股（如苹果、英伟达）以及大宗商品（如黄金）。
+* **清爽 UI**：状态栏每 5 秒自动轮播当前监控的股票（每次显示 3 支），保持界面整洁不拥挤。
+* **悬停全景**：将鼠标悬停在状态栏的插件上，即可通过提示框立即查看所有关注列表的实时行情。
 
-## Development
-This plugin is developed using Kotlin and the Gradle IntelliJ Plugin.
+## 🚀 安装步骤
+1. 您可以按下方文档自行构建，并在 `build/distributions` 目录下获取 `.zip` 插件包。
+2. 打开您的 IntelliJ 系列 IDE（例如 IDEA, WebStorm, PyCharm 等）。
+3. 进入 **File** -> **Settings...** -> **Plugins**。
+4. 点击顶部的 ⚙️ (齿轮) 图标，选择 **Install Plugin from Disk...**（从磁盘安装插件）。
+5. 选择生成的 `.zip` 文件，安装后重启 IDE 即可生效。
 
-- **Build**: `./gradlew buildPlugin` (Output will be in `build/distributions/`)
-- **Run in Sandbox IDE**: `./gradlew runIde`
+## 🛠 开发与构建
+本项目采用 Kotlin 开发，并基于 Gradle IntelliJ Plugin 构建。
+
+* **构建插件**: `./gradlew buildPlugin` (构建产物将输出在 `build/distributions/` 目录下)
+* **在沙箱中运行测试**: `./gradlew runIde` (将自动启动一个干净的测试 IDE 并加载本插件)
