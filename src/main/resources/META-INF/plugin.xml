@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.zhuxiufeng.stockticker</id>
+    <name>Stock Ticker</name>
+    <vendor email="user@example.com" url="https://github.com/zhuxiufeng">zhuxiufeng</vendor>
+
+    <description><![CDATA[
+    A lightweight, distraction-free stock ticker that resides quietly in the IDE status bar.<br>
+    Fetches real-time A-shares, US stocks, and HK stocks data automatically.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Register the Status Bar Widget Factory -->
+        <statusBarWidgetFactory implementation="com.zhuxiufeng.stockticker.ui.StockWidgetFactory" id="StockTickerStatusBarWidget"/>
+    </extensions>
+</idea-plugin>
